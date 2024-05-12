@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>Contact Us - Sosa :: The Trading App</title>
+
+    <!-- Font Awesome Cdn Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+    <section class="sub-header">
+        <header>
+            <div >
+                <nav>
+                    <a href="./index.html" class="logo">
+                        <h1>SOSA</h1>
+                    </a>
+                    <div class="nav_links" id="nav_links">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./day-trading.html">Day Trading</a></li>
+                            <li><a href="./smart-money-terms.html">Smart Money & Terms</a></li>
+                            <li><a href="./risk-management.html">Risk management</a></li>
+                            <li><a href="./trading-account.html">Trading Account</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+            </div>
+
+            <h2>Contact Us</h2>
+        </header>
+    </section>
+
+    <section>
+        <div class="container contact">
+            <div class="row">
+
+                <div class="col-md-6" >
+                    <form action="https://formsubmit.co/stax.sosa1@gmail.com" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Name :" required>
+                        <input type="email" name="Email" id="Email" placeholder="Email :" required>
+                        <input type="number" name="Mobile" id="Mobile" placeholder="Mobile :" required>
+                        <textarea id="message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://sosastax.github.io/contact.html">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="row flex">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-flex">
+                <a href="./index.html">Home</a>
+                <a href="./day-trading.html">Day Trading</a>
+                <a href="./smart-money-terms.html">Smart Money & Terms</a>
+                <a href="./risk-management.html">Risk Management</a>
+                <a href="./trading-account.html">Trading Account</a>
+            </div>
+            <div class="copyright">Copyright © 2024 SOSA All Rights Reserved. </div>
+        </div>
+    </footer>
+
+    <!-- Script  -->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
