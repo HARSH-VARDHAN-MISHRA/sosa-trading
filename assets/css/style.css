@@ -32,6 +32,9 @@ a {
     padding: 5rem 5rem;
     height: 700px;
 }
+img{
+    width: 100%;
+}
 
 
 /* ----- Header -------- */
@@ -191,6 +194,9 @@ nav .fa-solid{
 .row>div{
     padding: 0.5rem;
 }
+.row .col-md-6{
+    flex-basis: 48%;
+}
 .row .col-md-12{
     flex-basis: 99%;
 }
@@ -224,11 +230,17 @@ nav .fa-solid{
 .sub-header h2{
     margin-top: 4rem;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .day-content .single{
     margin-bottom: 2rem;
     position: relative;
+}
+.day-content h3{
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    color: red;
 }
 .day-content .single h3{
     font-size: 1.3rem;
@@ -240,9 +252,22 @@ nav .fa-solid{
     margin-bottom: 0.5rem;
 }
 
+/* ----- Smart Money --------  */
+.day-content h2{
+    margin: 1rem 0rem;
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 2.0rem;
+}
 
-
-
+.day-content ul{
+    padding-left: 0rem;
+    list-style: none;
+}
+.day-content ul strong{
+    font-weight: 500;
+    color: var(--color-red);
+}
 
 
 
@@ -252,10 +277,10 @@ nav .fa-solid{
     .container , .video iframe{
         padding: 4rem 3rem;
     }
-    .row .col-md-8 , .row .col-md-4{
+    .row .col-md-8 , .row .col-md-4 , .row .col-md-6{
         flex-basis: 100%;
     }
-    .day-content .col-md-4{
+    .row.reverse .col-md-4{
         order: -1;
     }
 }
